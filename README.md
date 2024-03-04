@@ -9,7 +9,7 @@ This repo contains an implementation of the https://www.hubspot.com/ as required
 
 
 ## Dev setup
-Installed the required dependencies (http-server): 
+Installed the required dependencies: 
 
 ```
 npm install

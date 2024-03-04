@@ -2,11 +2,12 @@
   "name": "uod-task",
   "description": "Website submission for UoD Front End Developer interview task ",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
     "start": "http-server"
   },
   "author": "Matt Munro",
   "devDependencies": {
+    "cypress": "^13.6.6",
     "http-server": "^14.1.1"
   }
 }
