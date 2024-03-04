@@ -21,3 +21,7 @@ npm start
 ```
 
 Then open: http://127.0.0.1:8080/
+
+
+### Notes
+- a11y test error is given for the lack of contrast on the buttons, however, this is also the case on the actual website. 
