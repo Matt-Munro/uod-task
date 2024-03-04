@@ -1,0 +1,22 @@
+/* Buttons */
+button {
+    --btn-colour-main: #f35c36;
+    --btn-colour-secondary: #ffffff;
+    --button-radius: 6px;
+    --btn-border: 2px solid var(--btn-colour-main);
+    --btn-padding: 12px 24px;
+
+    border: var(--btn-border);
+    border-radius: var(--button-radius);
+    padding: var(--btn-padding);
+}
+
+.btn-get-demo {
+    background-color: var(--btn-colour-main);
+    color: var(--btn-colour-secondary);
+}
+
+.btn-get-started {
+    background-color: var(--btn-colour-secondary);
+    color: var(--btn-colour-main);
+}
