@@ -1,0 +1,12 @@
+{
+  "name": "uod-task",
+  "description": "Website submission for UoD Front End Developer interview task ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "author": "Matt Munro",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
