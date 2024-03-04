@@ -20,3 +20,22 @@ button {
     background-color: var(--btn-colour-secondary);
     color: var(--btn-colour-main);
 }
+
+/* Section */
+section {
+    --section-bgd-colour-one: #fef4ea;
+    --section-bgd-colour-two: #ffffff;
+    --section-bgd-colour-three: #f6f9fc;
+}
+
+.section-one {
+    background-color: var(--section-bgd-colour-one);
+}
+
+.section-two {
+    background-color: var(--section-bgd-colour-two);
+}
+
+.section-three {
+    background-color: var(--section-bgd-colour-three);
+}
