@@ -1,105 +1,205 @@
-/* Buttons */
-button {
+/* Colours */
+:root {
     --btn-colour-main: #f35c36;
     --btn-colour-secondary: #ffffff;
-    --button-radius: 6px;
-    --btn-border: 2px solid var(--btn-colour-main);
-    --btn-padding: 12px 24px;
 
-    border: var(--btn-border);
-    border-radius: var(--button-radius);
-    padding: var(--btn-padding);
-}
-
-.btn-get-demo {
-    background-color: var(--btn-colour-main);
-    color: var(--btn-colour-secondary);
-}
-
-.btn-get-started {
-    background-color: var(--btn-colour-secondary);
-    color: var(--btn-colour-main);
-}
-
-/* Section */
-section {
     --section-bgd-colour-one: #fef4ea;
     --section-bgd-colour-two: #ffffff;
     --section-bgd-colour-three: #f6f9fc;
+
+    --font-colour: #223343;
+    --font-weight: 500;
 }
 
-.section-hero {
-    background-color: var(--section-bgd-colour-one);
-}
-
-.section-carousel {
-    background-color: var(--section-bgd-colour-two);
-}
-
-.section-video {
-    background-color: var(--section-bgd-colour-three);
-}
 
 /* typography */
 html {
     font-size: 100%;
 }
-@font-face {
-    font-family: "Queens";
-    src: url('/fonts/Queens/Queens_Trial/VariableFonts/QueensVarTrial.ttf') format('truetype');
-}
-@font-face {
-    font-family: "Lexend Deca";
-    src: url('fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
-}
-:root {
-    --font-colour: #223343;
-    --font-weight: 500;
 
-    --font-primary-size: 1rem;
-    --font-primary-family: "Lexend Deca", sans-serif;
+    :root {
+        --font-primary-size: 1rem;
+        --font-primary-family: "Lexend Deca", sans-serif;
+
+        --font-heading-size: 2rem;
+        --font-heading-family: "Lexend Deca", sans-serif;
+    }
+
+    @font-face {
+        font-family: "Queens";
+        src: url('/fonts/Queens/Queens_Trial/VariableFonts/QueensVarTrial.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: "Lexend Deca";
+        src: url('fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
+    }
+
+    h1, h2, p {
+        color: var(--font-colour);
+        font-weight: var(--font-weight);
+    }
+
+    h2 {
+        font-size: var(--font-heading-size);
+        font-family: var(--font-heading-family);
+    }
+
+    p {
+        font-family: var(--font-primary-family);
+        font-size: var(--font-primary-size);
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+
+/* Buttons */
+button {
+    --button-radius: 6px;
+    --btn-border: 2px solid var(--btn-colour-main);
+    /*--btn-padding: 0.5rem 1rem;*/
+    /*--btn-font-size: 0.875rem;*/
+
+    border: var(--btn-border);
+    border-radius: var(--button-radius);
+    /*padding: var(--btn-padding);*/
+    /*font-size: var(--btn-font-size);*/
+    font-weight: var(--font-weight);
+    font-family: var(--font-navbar-family);
+    cursor: pointer;
+}
+
+    .btn-get-demo {
+        background-color: var(--btn-colour-main);
+        color: var(--btn-colour-secondary);
+    }
+
+    .btn-get-demo:hover {
+        background-color: #e04827
+    }
+
+    .btn-get-started {
+        background-color: var(--btn-colour-secondary);
+        color: var(--btn-colour-main);
+    }
+
+    .btn-get-started:hover {
+        background-color: #ffebe6;
+    }
+
+
+/* Navbar */
+nav {
+    height: 10%;
+    max-height: 80px;
 
     --font-navbar-size: 1.125rem;
     --font-navbar-family: "Lexend Deca", sans-serif;
+}
 
+    .navbar-end {
+        padding-right: 5%;
+    }
+
+    .navbar-link {
+        font-family: var(--font-navbar-family);
+        color: var(--font-colour);
+        font-size: var(--font-navbar-size);
+        cursor: pointer;
+    }
+
+    nav button {
+        max-height: 70%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 16px;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+
+/* Hero */
+.section-hero {
+    background-color: var(--section-bgd-colour-one);
     --font-hero-size: 3.75em;
     --font-hero-family: "Queens", serif;
-
-    --font-heading-size: 2rem;
-    --font-heading-family: "Lexend Deca", sans-serif;
 }
 
-h1, h2, p {
-    color: var(--font-colour);
-    font-weight: var(--font-weight);
+    .section-hero h1 {
+        font-family: var(--font-hero-family);
+        font-size: var(--font-hero-size);
+    }
+
+    .section-hero button {
+        height: 64px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 16px;
+        padding: 1rem 2.7rem;
+        font-size: 1rem;
+        font-weight: var(--font-weight);
+    }
+
+    .image-hero {
+        max-width: 630px;
+    }
+
+    .columns-hero {
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+
+
+/* Carousel */
+.section-carousel {
+    background-color: var(--section-bgd-colour-two);
 }
 
-h1 {
-    font-family: var(--font-hero-family);
-    font-size: var(--font-hero-size);
+
+/* What is HubSpot? */
+.section-video {
+    background-color: var(--section-bgd-colour-three);
 }
 
-h2, p {
-    font-family: var(--font-primary-family);
+    .section-video button {
+        height: 56px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 16px;
+        padding: 0.2rem 2rem;
+        font-size: 1rem;
+        font-weight: var(--font-weight);
+    }
+
+
+/* Hub */
+.section-hub {
+    background-color: var(--section-bgd-colour-one);
 }
 
-h2 {
-    font-size: var(--font-heading-size);
-    font-family: var(--font-heading-family);
-}
+    .section-hub h2{
+        text-align: center;
+    }
 
-p {
-    font-size: var(--font-primary-size);
-}
+    .section-hub p {
+        max-width: 825px;
+        margin: auto;
+        text-align: left;
+    }
 
-button {
-    font-size: var(--font-primary-size);
-    cursor: pointer;
-}
+    .image-hub {
+        max-width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.navbar-link {
-    font-family: var(--font-navbar-family);
-    color: var(--font-colour);
-    font-size: var(--font-navbar-size);
-    cursor: pointer;
-}
+    .section-hub button {
+        height: 56px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 16px;
+        padding: 0.2rem 2rem;
+        font-size: 1rem;
+        font-weight: var(--font-weight);
+    }
