@@ -22,20 +22,21 @@ html {
 
     :root {
         --font-primary-size: 1rem;
-        --font-primary-family: "Lexend Deca", sans-serif;
+        --font-primary-family: "LexendDeca", sans-serif;
 
         --font-heading-size: 2rem;
-        --font-heading-family: "Lexend Deca", sans-serif;
+        --font-heading-family: "LexendDeca", sans-serif;
     }
 
     @font-face {
         font-family: "Queens";
-        src: url('/fonts/Queens/Queens_Trial/VariableFonts/QueensVarTrial.ttf') format('truetype');
+        src: url('../fonts/Queens/Queens_Trial/VariableFonts/QueensVarTrial.ttf') format('truetype');
+
     }
 
     @font-face {
-        font-family: "Lexend Deca";
-        src: url('fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
+        font-family: "LexendDeca";
+        src: url('../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
     }
 
     h1, h2, p {
