@@ -88,8 +88,27 @@ button {
     }
 
 
-/* Navbar */
-nav {
+/* Navbars */
+.navbar-settings {
+    padding-left: 10%;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+    @media (width <= 1024px) {
+        .navbar-settings {
+            display: none;
+        }
+    }
+
+    .navbar-settings button {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px;
+        height: 12px;
+    }
+
+.nav-main {
     height: 10%;
     max-height: 80px;
 
@@ -97,6 +116,13 @@ nav {
     --font-navbar-family: "Lexend Deca", sans-serif;
 
     box-shadow: #00000026 2px 2px 3px;
+
+    /* override bulma setting */
+    position: sticky !important;
+    top: 0;
+    padding-left: 9%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
     .navbar-end {
@@ -110,7 +136,7 @@ nav {
         cursor: pointer;
     }
 
-    nav button {
+    .nav-main button {
         max-height: 70%;
         margin-top: auto;
         margin-bottom: auto;

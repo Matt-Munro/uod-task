@@ -7,12 +7,27 @@
     <meta name="description" content="An implementation of the HubSpot website for the front end developer interview at the University of Dundee.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="styles/style.css">
+
+    <script src="scripts/script.js"></script>
 </head>
 <body>
-    <nav class="navbar is-fixed-top" role="navigation">
+    <div class="navbar-settings">
+        <div>
+                <button class="btn-settings navbar-item">
+                    English
+                </button>
+                <button class="btn-settings navbar-item">
+                    High Contrast
+                </button>
+                <button class="btn-settings navbar-item">
+                    Contact Sales
+                </button>
+        </div>
+    </div>
+    <nav id="navbar" class="navbar nav-main" role="navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#">
-                <img src="images/logo.svg" alt="HubSpot | Software, Tools, Resources for Your Business">
+                <img id="img-logo" src="images/logo-full.svg" alt="HubSpot | Software, Tools, Resources for Your Business">
             </a>
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
