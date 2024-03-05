@@ -28,5 +28,15 @@ npm run cypress:open
 ```
 Select a browser, 'Start E2E testing...', then 'spec.cy.js'
 
-### Notes
-- a11y test error is given for the lack of contrast on the buttons, however, this is also the case on the actual website. 
+### Notes and issues
+#### Accessibility 
+- a11y test error is given for the lack of contrast on the buttons, however, this is also the case on the actual website.
+
+#### Bugs
+- The 'Software' dropdown disappears if the mouse is moved slowly between the heading and the dropdown box because of the gap between them. Possible solutions: 
+  - adjusting the size of the div to ensure overlap, 
+  - creating a larger 'safe' zone in which the mouse is registered, 
+  - extending the dropdown header div to be flush with the bottom of the header. 
+- There are some layout issues when adjusting between sizes. e.g. On the actual page the text 'Grow better with HubSpot' is only ever displayed either with the first three words together then 'Hubspot' on a newline, or all together on one single line on smaller displays. In this implementation the words are sometimes shown on a separate line each. 
+
+
