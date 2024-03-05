@@ -95,6 +95,8 @@ nav {
 
     --font-navbar-size: 1.125rem;
     --font-navbar-family: "Lexend Deca", sans-serif;
+
+    box-shadow: #00000026 2px 2px 3px;
 }
 
     .navbar-end {
