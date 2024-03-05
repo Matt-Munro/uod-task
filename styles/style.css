@@ -59,16 +59,12 @@ html {
 
 
 /* Buttons */
-button {
+.btn-get-demo, .btn-get-started {
     --button-radius: 6px;
     --btn-border: 2px solid var(--btn-colour-main);
-    /*--btn-padding: 0.5rem 1rem;*/
-    /*--btn-font-size: 0.875rem;*/
 
     border: var(--btn-border);
     border-radius: var(--button-radius);
-    /*padding: var(--btn-padding);*/
-    /*font-size: var(--btn-font-size);*/
     font-weight: var(--font-weight);
     font-family: var(--font-navbar-family);
     cursor: pointer;
