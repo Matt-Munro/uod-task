@@ -7,6 +7,9 @@
     --section-bgd-colour-two: #ffffff;
     --section-bgd-colour-three: #f6f9fc;
 
+    --dropdown-bgd-colour: #f6f9fc;
+    --dropdown-border-colour: #b6c7d6;
+
     --font-colour: #223343;
     --font-weight: 500;
 }
@@ -124,6 +127,14 @@ button {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+    .navbar-dropdown {
+        top: 65px;
+        width: 1080px;
+        margin: auto;
+        height: 584px;
+        background-color: var(--dropdown-bgd-colour);
+        border: 1px solid var(--dropdown-border-colour);
+    }
 
     .navbar-end {
         padding-right: 5%;
