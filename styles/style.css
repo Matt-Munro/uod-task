@@ -52,6 +52,7 @@ html {
     p {
         font-family: var(--font-primary-family);
         font-size: var(--font-primary-size);
+        font-weight: 300;
         padding-top: 2%;
         padding-bottom: 2%;
     }
