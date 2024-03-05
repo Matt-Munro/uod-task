@@ -127,14 +127,6 @@ html {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-    .navbar-dropdown {
-        top: 65px;
-        width: 1080px;
-        margin: auto;
-        height: 584px;
-        background-color: var(--dropdown-bgd-colour);
-        border: 1px solid var(--dropdown-border-colour);
-    }
 
     .navbar-end {
         padding-right: 5%;
@@ -147,13 +139,70 @@ html {
         cursor: pointer;
     }
 
-    .nav-main button {
+    .navbar-dropdown {
+        top: 65px;
+        width: 1080px;
+        margin: auto;
+        height: 584px;
+        background-color: var(--dropdown-bgd-colour);
+        border: 1px solid var(--dropdown-border-colour);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .navbar-dropdown h3 {
+        font-size: 1.125rem;
+        /*font-weight: ;*/
+        font-family: var(--font-heading-family);
+        color: var(--font-colour);
+        margin-top: 20px;
+    }
+
+    .navbar-dropdown h4 {
+        font-size: 1rem;
+        /*font-weight: ;*/
+        font-family: var(--font-heading-family);
+        color: var(--font-colour);
+    }
+
+    .navbar-dropdown .columns {
+        width: 80%;
+        margin: auto;
+    }
+
+    .navbar-dropdown button {
         max-height: 70%;
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 16px;
-        padding: 0.5rem 1rem;
+        padding: 1.5rem 3rem;
         font-size: 0.875rem;
+        font-weight: 600;
+        background-color: white;
+        border: 1px solid #eaf0f6;
+        color: #2368b1;
+    }
+
+    .dropdown-hub {
+        background-color: var(--section-bgd-colour-two);
+        padding: 10px;
+        margin: 16px;
+        border: 1px solid var(--dropdown-border-colour);
+    }
+
+    .dropdown-callout {
+        background-color: var(--section-bgd-colour-two);
+        border: 1px solid var(--dropdown-border-colour);
+    }
+
+    .dropdown-callout-column {
+        background-color: var(--dropdown-bgd-colour);
+        padding: 10px;
+        margin: 16px;
+        border: 1px solid var(--dropdown-border-colour);
+    }
+
+    .dropdown-callout-column p {
+        font-size: 0.8rem;
     }
 
 
