@@ -90,6 +90,7 @@ html {
 
 
 /* Navbars */
+/*      Setting: language, contrast, etc.   */
 .navbar-settings {
     padding-left: 10%;
     padding-bottom: 30px;
@@ -109,12 +110,13 @@ html {
         height: 12px;
     }
 
+/*    Main navbar: Software dropdown, Pricing, etc.  */
 .nav-main {
     height: 10%;
     max-height: 80px;
 
     --font-navbar-size: 1.125rem;
-    --font-navbar-family: "Lexend Deca", sans-serif;
+    --font-navbar-family: "LexendDeca", sans-serif;
 
     box-shadow: #00000026 2px 2px 3px;
 
