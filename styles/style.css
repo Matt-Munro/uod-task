@@ -39,3 +39,67 @@ section {
 .section-video {
     background-color: var(--section-bgd-colour-three);
 }
+
+/* typography */
+html {
+    font-size: 100%;
+}
+@font-face {
+    font-family: "Queens";
+    src: url('/fonts/Queens/Queens_Trial/VariableFonts/QueensVarTrial.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Lexend Deca";
+    src: url('fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
+}
+:root {
+    --font-colour: #223343;
+    --font-weight: 500;
+
+    --font-primary-size: 1rem;
+    --font-primary-family: "Lexend Deca", sans-serif;
+
+    --font-navbar-size: 1.125rem;
+    --font-navbar-family: "Lexend Deca", sans-serif;
+
+    --font-hero-size: 3.75em;
+    --font-hero-family: "Queens", serif;
+
+    --font-heading-size: 2rem;
+    --font-heading-family: "Lexend Deca", sans-serif;
+}
+
+h1, h2, p {
+    color: var(--font-colour);
+    font-weight: var(--font-weight);
+}
+
+h1 {
+    font-family: var(--font-hero-family);
+    font-size: var(--font-hero-size);
+}
+
+h2, p {
+    font-family: var(--font-primary-family);
+}
+
+h2 {
+    font-size: var(--font-heading-size);
+    font-family: var(--font-heading-family);
+}
+
+p {
+    font-size: var(--font-primary-size);
+}
+
+button {
+    font-size: var(--font-primary-size);
+    cursor: pointer;
+}
+
+.navbar-link {
+    font-family: var(--font-navbar-family);
+    color: var(--font-colour);
+    font-size: var(--font-navbar-size);
+    cursor: pointer;
+}
