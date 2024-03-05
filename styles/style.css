@@ -28,14 +28,14 @@ section {
     --section-bgd-colour-three: #f6f9fc;
 }
 
-.section-one {
+.section-hero {
     background-color: var(--section-bgd-colour-one);
 }
 
-.section-two {
+.section-carousel {
     background-color: var(--section-bgd-colour-two);
 }
 
-.section-three {
+.section-video {
     background-color: var(--section-bgd-colour-three);
 }
