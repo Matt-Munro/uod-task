@@ -10,9 +10,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // Used for positioning
     let slideIds = Array(slides.length);
 
+    // Used to position the slides vertically
+    let container = document.getElementById("carousel");
+    let containerHeight = container.offsetHeight;
+
     // Set initial position of slides and initialise the ID array
     slides.forEach((slide, index) => {
+        // X position
         slide.style.transform = `translateX(${movementWidth * index}%)`;
+        // Y position
+        let slideHeight = slide.offsetHeight;
+        slide.style.marginTop = ((containerHeight-slideHeight)/2)+'px';
+
         slideIds[index] = index;
         toggleDisplayForHiddenItems()
     });
