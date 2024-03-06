@@ -14,6 +14,15 @@
     --font-weight: 500;
 }
 
+/* Sizing */
+:root {
+    --page-max-width: 1200px;
+}
+    @media (width <= 1024px) {
+        :root {
+            --page-max-width: 80%;
+        }
+    }
 
 /* typography */
 html {
@@ -90,9 +99,18 @@ html {
 
 
 /* Navbars */
+.navbar-content {
+    margin: auto;
+    max-width: var(--page-max-width);
+    display: flex;
+}
+    @media (width <= 1024px) {
+        .navbar-content {
+            display: block;
+        }
+    }
 /*      Setting: language, contrast, etc.   */
 .navbar-settings {
-    padding-left: 10%;
     padding-bottom: 30px;
     padding-top: 10px;
 }
@@ -260,10 +278,8 @@ html {
     }
 
     .columns-hero {
-        padding-top: 10%;
-        padding-left: 10%;
         margin: auto;
-        max-width: 1500px;
+        max-width: var(--page-max-width);
     }
 
 
@@ -275,7 +291,7 @@ html {
 
     .carousel {
         width: 100%;
-        max-width: 1200px;
+        max-width: var(--page-max-width);
         height: 100px;
         margin: auto;
         position: relative;
@@ -336,7 +352,13 @@ html {
 /* What is HubSpot? */
 .section-video {
     background-color: var(--section-bgd-colour-three);
+    margin: auto;
 }
+
+    .columns-video {
+        max-width: var(--page-max-width);
+        margin: auto;
+    }
 
     .section-video button {
         height: 56px;
@@ -365,7 +387,7 @@ html {
     }
 
     .image-hub {
-        max-width: 80%;
+        max-width: var(--page-max-width);
         display: block;
         margin-left: auto;
         margin-right: auto;
