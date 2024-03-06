@@ -306,7 +306,6 @@ html {
         position: absolute;
         transition: all 0.5s;
         margin: 0;
-        top: 50%;
     }
 
     .slide img {
