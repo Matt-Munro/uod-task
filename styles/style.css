@@ -241,7 +241,67 @@ html {
 /* Carousel */
 .section-carousel {
     background-color: var(--section-bgd-colour-two);
+    padding-bottom: 90px;
 }
+
+    .carousel {
+        width: 100%;
+        max-width: 1200px;
+        height: 100px;
+        margin: auto;
+        position: relative;
+         overflow: hidden;
+        display: flex;
+    }
+
+    .carousel-image-container {
+        width: 76%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+    }
+
+    .slide {
+        position: absolute;
+        transition: all 0.5s;
+        margin: 0;
+        top: 50%;
+    }
+
+    .slide img {
+        width: 150px;
+        margin: auto;
+        padding-left: 30px;
+    }
+
+    .btn-carousel-next, .btn-carousel-prev {
+        position: absolute;
+        cursor: pointer;
+        border: none;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    .btn-carousel-prev:hover, .btn-carousel-next:hover {
+        background-color: #eaf0f7;
+    }
+
+    .btn-carousel-prev:active, .btn-carousel-next:active {
+        background-color: #b6c7d7;
+    }
+
+    .btn-carousel-prev {
+        top: 45%;
+        left: 2%;
+    }
+
+    .btn-carousel-next {
+        top: 45%;
+        right: 2%;
+    }
 
 
 /* What is HubSpot? */

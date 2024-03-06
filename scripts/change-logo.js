@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+
     window.onscroll = function () {
         changeLogoOnSticky()
     };
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Switches between the full and mini logo when the user scrolls
     // and the nav bar reaches the top of the screen
     function changeLogoOnSticky() {
-        if (window.scrollY >= sticky - 30) {
+        if (window.scrollY >= sticky ) {
             logo.src = "../images/logo.svg"
         } else {
             logo.src = "../images/logo-full.svg"

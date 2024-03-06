@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="cl-icon" aria-hidden="true" width="32"  height="32" ><defs><symbol id="left" viewBox="0 0 32 32">
+  <path d="M18.08 3.8a1.6 1.6 0 00-2.23.05l-10.51 11v.07l-.1.16a1 1 0 00-.16.26 1.15 1.15 0 00-.06.28H5a2.18 2.18 0 000 .29 2.87 2.87 0 000 .31 1.59 1.59 0 00.06.3 1.78 1.78 0 00.17.27l.1.16V17l10.52 11a1.59 1.59 0 002.82-1 1.57 1.57 0 00-.54-1.18l-9.47-9.89L18.13 6a1.58 1.58 0 00.42-1.07 1.55 1.55 0 00-.47-1.11z"></path>
+</symbol></defs>
+            <use xlink:href="#left" fill="#213343"></use>
+          </svg>
