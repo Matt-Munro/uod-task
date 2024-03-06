@@ -237,6 +237,14 @@ html {
         font-size: var(--font-hero-size);
     }
 
+    .section-hero p {
+        max-width: 550px;
+    }
+
+    .subheading-hero {
+        font-weight: var(--font-weight);
+    }
+
     .section-hero button {
         height: 64px;
         margin-top: auto;
@@ -254,6 +262,8 @@ html {
     .columns-hero {
         padding-top: 10%;
         padding-left: 10%;
+        margin: auto;
+        max-width: 1500px;
     }
 
 
