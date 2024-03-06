@@ -142,6 +142,9 @@ html {
 
 /*    Main navbar: Software dropdown, Pricing, etc.  */
 .nav-main {
+    --font-navbar-size: 1.125rem;
+    --font-navbar-family: "LexendDeca", sans-serif;
+
     height: 10%;
     max-height: 80px;
     /* override bulma setting */
