@@ -223,7 +223,7 @@ html {
 
     .dropdown-callout {
         background-color: var(--section-bgd-colour-two);
-        border: 1px solid var(--dropdown-border-colour);
+        border-bottom: 1px solid var(--dropdown-border-colour);
     }
 
     .dropdown-callout-column {
