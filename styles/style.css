@@ -144,18 +144,11 @@ html {
 .nav-main {
     height: 10%;
     max-height: 80px;
-
-    --font-navbar-size: 1.125rem;
-    --font-navbar-family: "LexendDeca", sans-serif;
-
-    box-shadow: #00000026 2px 2px 3px;
-
     /* override bulma setting */
     position: sticky !important;
     top: 0;
-    padding-left: 9%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+
+    box-shadow: #00000026 2px 2px 3px;
 }
 
     .nav-main button {
