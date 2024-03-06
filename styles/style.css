@@ -96,6 +96,18 @@ html {
     padding-bottom: 30px;
     padding-top: 10px;
 }
+    .navbar-settings button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-family: var(--font-navbar-family);
+        font-weight: 700;
+        font-size: 0.875rem;
+    }
+
+    .navbar-settings button:hover {
+        color: #005fa3;
+    }
 
     @media (width <= 1024px) {
         .navbar-settings {
