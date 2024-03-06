@@ -30,7 +30,12 @@ Select a browser, 'Start E2E testing...', then 'spec.cy.js'
 
 ### Notes and issues
 #### Accessibility 
-- a11y test error is given for the lack of contrast on the buttons, however, this is also the case on the actual website.
+- Cypress axe-core
+  - a11y test error is given for the lack of contrast on the buttons, however, this is also the case on the actual website.
+- Lighthouse
+  - "Background and foreground colors do not have a sufficient contrast ratio." Present at the light orange background and text, and at the grey background and text.  
+- Manual
+  - Tabbing through the interactive elements of the website skips over the 'Software', 'Pricing', and 'Resources' elements. 
 
 #### Bugs / missing features
 - The 'Software' dropdown disappears if the mouse is moved slowly between the heading and the dropdown box because of the gap between them. Possible solutions: 
