@@ -47,4 +47,7 @@ Select a browser, 'Start E2E testing...', then 'spec.cy.js'
   - This could be addressed by dynamically adjusting the 'slidesToShow' and 'movementWidth' values based on the current page width. 
 - The carousel on the actual page can be dragged. Currently, this implementation only works with the buttons. 
   - A possible solution involves using a 'click' event on the 'carousel-image-container', then setting the X position of the images using the current mouse/pointer position. 
+- It would be beneficial to add additional automated test cases including: movement and function of the carousel, responsiveness at various resolutions, speed of page-load on slower connection. 
+- It would be beneficial to perform user testing, such as screen-reader testing, various devices types, and user-experience. 
+- It would be beneficial to add tests for the JavaScript code. 
 
